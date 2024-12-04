@@ -10240,7 +10240,7 @@ LGraphNode.prototype.executeAction = function(action)
                     node.properties[propertyName] = value;
                     if (node.onPropertyChanged) {
                         if (node.onPropertyChanged(propertyName, value, prev_value) === false)
-                            node.properties[name] = prev_value;
+                            node.properties[propertyName] = prev_value;
                     }
                 }
 
